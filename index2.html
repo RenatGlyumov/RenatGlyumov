@@ -1,0 +1,51 @@
+<html lang="en">
+    <head>
+        <title>index</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="module" src="PuzzleV24.js" defer></script>
+        <script type="module" src="dataSend.js" defer></script>
+    </head>
+    <body>
+        <div id="param">            
+            <label for="loading" class="btn">Upload image</label>
+            <input type="file" id="loading" hidden/>
+            
+            <label class="ll">Width x Hight cm:</label>
+            <input type="text" class="ol st1" id="inputWidth"/>
+            <label class="x">x</label>
+            <input type="text" class="ol st1" id="inputHeight"/>
+            
+            <label class="ll">Horizontall x Verticall:</label>
+            <input type="text" class="ol st2" id="inputXn" />
+            <label class="x">x</label>
+            <input type="text" class="ol st2" id="inputYn" />
+            
+            <input type="button" class="ol btn" id="genPuzzleButton" value="gen" />
+            <input type="button" class="ol btn" id="send" />
+            <a id="fileDownload">
+                <input type="button" class="ol btn" value="download svg" id="getFile" />
+            </a>
+        </div>
+        <div id="view">
+            <div class="scl">
+                <button id="plus">+</button>
+                <button id="minus">-</button>
+            </div>
+            <div id="openMenu">
+                <button>Buy</button>
+            </div>
+        </div>
+        <div id="menu">
+            <table>
+                <tr>
+                    <td>Размер пазла cm</td>
+                    <td id="sizecm">1000x1000</td>
+                </tr>
+                <tr>
+                    <td>Количество деталей</td>
+                    <td id="sizedetal">100x100</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
